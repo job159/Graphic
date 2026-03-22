@@ -4,9 +4,28 @@ __pycache__/
 *.pyo
 *.pyd
 
+
 .idea/
 .vscode/
 
 dist/
 build/
 *.spec
+
+
+#ignore all files from java
+*.class
+*.jar
+*.war
+*.ear
+*.java
+*.jsp
+*.jspx
+*.properties
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.swn
+*.swn
