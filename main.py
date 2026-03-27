@@ -15,7 +15,7 @@ from PyQt6.QtWidgets import (
 from shape_demos import CircleDemo, EllipseDemo, FlameDemo, LightningDemo, SkewEllipseDemo
 
 
-WINDOW_WIDTH = 1000
+WINDOW_WIDTH = 1200
 WINDOW_HEIGHT = 720
 
 CIRCLE_MODE = "circle"
