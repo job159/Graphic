@@ -9,10 +9,11 @@
 - [03 Skew Ellipse 數學教學](docs/hackmd/03_skew_ellipse_math.md)
 - [04 Lightning 數學教學](docs/hackmd/04_lightning_math.md)
 - [05 Flame 數學教學](docs/hackmd/05_flame_math.md)
+- [06 Smoke 數學教學](docs/hackmd/06_smoke_math.md)
 
 ## 程式框架教學
 
-- [06 Code Framework 教學](docs/hackmd/06_code_framework.md)
+- [07 Code Framework 教學](docs/hackmd/07_code_framework.md)
 
 ## 建議閱讀順序
 
@@ -21,7 +22,8 @@
 3. `Skew Ellipse`
 4. `Lightning`
 5. `Flame`
-6. `Code Framework`
+6. `Smoke`
+7. `Code Framework`
 
 ## 這套文件的重點
 

@@ -12,10 +12,10 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
-from shape_demos import CircleDemo, EllipseDemo, FlameDemo, LightningDemo, SkewEllipseDemo
+from shape_demos import CircleDemo, EllipseDemo, FlameDemo, LightningDemo, SkewEllipseDemo, SmokeDemo
 
 
-WINDOW_WIDTH = 1000
+WINDOW_WIDTH = 1300
 WINDOW_HEIGHT = 720
 
 CIRCLE_MODE = "circle"
@@ -23,6 +23,7 @@ ELLIPSE_MODE = "ellipse"
 SKEW_ELLIPSE_MODE = "skew_ellipse"
 LIGHTNING_MODE = "lightning"
 FLAME_MODE = "flame"
+SMOKE_MODE = "smoke"
 
 MODE_LABELS = {
     CIRCLE_MODE: "Circle",
@@ -30,6 +31,7 @@ MODE_LABELS = {
     SKEW_ELLIPSE_MODE: "Skew Ellipse",
     LIGHTNING_MODE: "Lightning",
     FLAME_MODE: "Flame",
+    SMOKE_MODE: "Smoke",
 }
 
 ALIGN_LEFT_TOP_WRAP = (
@@ -65,6 +67,7 @@ class GraphicsCanvas(QWidget):
             SKEW_ELLIPSE_MODE: SkewEllipseDemo(),
             LIGHTNING_MODE: LightningDemo(),
             FLAME_MODE: FlameDemo(),
+            SMOKE_MODE: SmokeDemo(),
         }
         self.setMinimumSize(WINDOW_WIDTH, WINDOW_HEIGHT - 120)
 
@@ -476,6 +479,9 @@ class MainWindow(QMainWindow):
 
         flame_action = mode_menu.addAction("Flame")
         flame_action.triggered.connect(lambda: self.set_mode(FLAME_MODE))
+
+        smoke_action = mode_menu.addAction("Smoke")
+        smoke_action.triggered.connect(lambda: self.set_mode(SMOKE_MODE))
 
     def set_mode(self, mode: str) -> None:
         self.canvas.set_mode(mode)

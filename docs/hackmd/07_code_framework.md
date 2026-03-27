@@ -19,14 +19,16 @@ Graphics/
 │     ├─ 03_skew_ellipse_math.md
 │     ├─ 04_lightning_math.md
 │     ├─ 05_flame_math.md
-│     └─ 06_code_framework.md
+│     ├─ 06_smoke_math.md
+│     └─ 07_code_framework.md
 └─ shape_demos/
    ├─ __init__.py
    ├─ circle_demo.py
    ├─ ellipse_demo.py
    ├─ skew_ellipse_demo.py
    ├─ lightning_demo.py
-   └─ flame_demo.py
+   ├─ flame_demo.py
+   └─ smoke_demo.py
 ```
 
 ## `main.py` 在做什麼
